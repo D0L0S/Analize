@@ -14,7 +14,7 @@ from operator import itemgetter
 import sqlite3
 
 today = date.today()
-database = 'analytics.db'
+database = 'DATABASE'
 
 filename = 'PROJECT_FILE.p12'
 f = file(filename, 'rb')
