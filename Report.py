@@ -33,8 +33,8 @@ def chart2(Numbers, FileName, ChartTitle):
         pie_chart.add(Numbers[3][1], int(Numbers[3][2]))
         pie_chart.add(Numbers[4][1], int(Numbers[4][2]))
         pie_chart.render()
-        svgChart = 'Flask/static/img/Charts/svg/{title}-{date}.svg'.format(title=FileName, date=str(date.today()))
-        pngChart = 'Flask/static/img/Charts/png/{title}-{date}.png'.format(title=FileName, date=str(date.today()))
+        svgChart = '{title}-{date}.svg'.format(title=FileName, date=str(date.today()))
+        pngChart = '{title}-{date}.png'.format(title=FileName, date=str(date.today()))
         pie_chart.render_to_file(svgChart)
         pie_chart.render_to_png(filename=pngChart)
 
